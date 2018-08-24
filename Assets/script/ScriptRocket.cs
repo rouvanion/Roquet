@@ -24,11 +24,11 @@ public class ScriptRocket : MonoBehaviour
     {
         if (Input.GetAxis("Jump") > 0)
         {
-            carRigideBody.AddForce(new Vector3(0, ForceFoward, 0));
+            carRigideBody.AddRelativeForce(new Vector3(0, ForceFoward, 0));
         }
         else if (Input.GetAxis("Jump") < 0)
         {
-            carRigideBody.AddForce(new Vector3(0, -ForceFoward, 0));
+            carRigideBody.AddRelativeForce(new Vector3(0, -ForceFoward, 0));
         }
 
     }
